@@ -1,0 +1,21 @@
+.navbar-brand{
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+}
+.btn-light{
+    background-color: #ffffff;
+    color: #000000;
+}
+.navbar{
+    border-bottom: 1px solid lightgray;
+}
+.margen{
+    margin-top: 70px;
+}
+.col{
+    border: #000000;
+}
+.image {
+    height: 200px;
+    width: 200px;
+}
