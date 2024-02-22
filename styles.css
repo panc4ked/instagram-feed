@@ -2,6 +2,10 @@
     font-family: 'Oleo Script', cursive;
     font-size: 25px;
 }
+.card{
+   margin-left: 100px;
+   margin-top: 20px;
+}
 .btn-light{
     background-color: #ffffff;
     color: #000000;
