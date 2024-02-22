@@ -3,7 +3,7 @@
     font-size: 25px;
 }
 .card{
-   margin-left: 100px;
+   margin-left: 320px;
    margin-top: 20px;
 }
 .btn-light{
@@ -20,6 +20,7 @@
     border: #000000;
 }
 .image {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
+    margin: 10px;
 }
