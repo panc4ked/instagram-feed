@@ -2,9 +2,12 @@
     font-family: 'Oleo Script', cursive;
     font-size: 25px;
 }
+.card-cont {
+    display: flex;
+    align-items: center;
+}
 .card{
-   margin-left: 320px;
-   margin-top: 20px;
+    margin-top: 20px;
 }
 .btn-light{
     background-color: #ffffff;
@@ -22,5 +25,5 @@
 .image {
     height: 400px;
     width: 400px;
-    margin: 10px;
+    margin: 20px;
 }
