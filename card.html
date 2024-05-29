@@ -8,6 +8,27 @@
       src="https://kit.fontawesome.com/5dd66bf8d0.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
 </html>
@@ -26,20 +47,13 @@
         Crear un nuevo post
       </button>
       <div class="btn-group">
-        <button
-          type="button"
-          class="btn btn-light dropdown-toggle"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <i class="fas fa-cog"></i>
-        </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="#">Accion</a>
-          <a class="dropdown-item" href="#">Otra accion</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Cerrar sesión</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
       </div>
     </form>
